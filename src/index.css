@@ -1,0 +1,102 @@
+/* Page Centering */
+/* Page Centering */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+
+  background: linear-gradient(135deg, #ffacc5, rgba(87, 49, 228, 0.849));
+  margin: 0;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+
+  flex-direction: column;  /* ✅ Force content in column, keeps center */
+}
+
+
+/* Container for the project */
+.app-container {
+  background: rgb(214, 161, 247);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 75px rgba(250, 74, 21, 0.61);
+  text-align: center;
+  .app-container {
+  min-height: 220px; /* ensures container is always visible */
+}
+
+  width: 100%;   
+  max-width: 400px;   
+  box-sizing: border-box;    
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Common button styling */
+button {
+  margin: 8px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Add Button (Green) */
+.add-btn {
+  background: #28a745;
+}
+.add-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+/* Remove Button (Red) */
+.remove-btn {
+  background: #dc3545;
+}
+.remove-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* Reset Button (Blue) */
+.reset-btn {
+  background: #007bff;
+}
+.reset-btn:hover {
+  background: #0069d9;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 15px;
+    padding: 14px;
+  }
+}
